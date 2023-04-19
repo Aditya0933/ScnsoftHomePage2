@@ -1,0 +1,59 @@
+/* Container Padding*/
+
+.container-padding{
+    padding: 5% 9%;
+}
+
+/*  HEADING and PARAGRAPH DESIGN */
+.heading-padding{
+    padding: 16px 14px 16px 20px; 
+    color: #fff;   
+}
+
+.expolre-content-heading{
+    margin-bottom: 20px;
+    font-size: 28px;
+}
+.expolre-content-paragraph{
+    line-height: 2;
+    font-size: 18px;
+    margin-bottom: 19px;
+}
+.expolre-content-ul{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+.expolre-content-ul-li{
+    list-style-type: square;
+
+    font-size: 18px;
+    margin: 0 15px 20px 23px;
+    padding-top: 10px;
+}
+
+/* Learn More BTN */
+
+.btn-learn-more{
+    /* position: absolute; */
+    /* top: 0; */
+    /* bottom: 10px;
+    right: 10px; */
+    text-align: right;
+    margin-top: 20px;
+}
+.btn-learn-more button{
+    background-color: transparent;
+    border: none;
+    color: #005eb8;
+    font-weight: 500;
+}
+.btn-container{
+    text-align: center;
+    margin-top: 20px;
+}
+.container-btn{
+    padding: 15px 35px;
+    border: none;
+    font-weight: 550;
+}
+
