@@ -788,6 +788,12 @@ nav .nav-content ul li span{
     grid-template-columns:repeat(3,1fr);
     grid-column-gap:30px
 }
+.feature img{
+    aspect-ratio: 3/4;
+    object-fit: contain;
+    max-height: auto;
+    max-width: 100%;
+}
 .feature{
     padding:5%;
     box-shadow: 2px 0px 10px rgba(0,0,0,.20);
@@ -870,23 +876,71 @@ nav .nav-content ul li span{
 
 
   /* FAQ Section */
-  .faq{
+
+
+ .faq{
     display: flex;
     justify-content: space-between;
   }
+  .faq-back{
+    position: relative;
+    /* padding: 10px; */
+    /* background-color: #ed8b00; */
+    color: #000000;
+    /* margin-bottom: 20px; */
+  }
+    /*
   .faq p{
     font-size: 20px;
     font-weight: 500;
     line-height: 2;
     margin-bottom: 15px;
     color: #005eb8;
-  }
-  .faq-detail{
-    display: flex;
+  }*/
+  .faq-detail i{
+    margin-left: 8px;
+    /* margin-top: 50%; */
+    /* transform: translateY(-50%); */
+    /* text-align: center; */
+    transition: all .5s ease-in-out ;
     
-    position: relative;
 
   }
+  .faq-detail{
+    color: #005eb8;
+    display:flex;
+    align-items: center;
+  }
+  .faq-para p{
+    font-size: 20px;
+    color: blue;
+    padding: 20 0px;
+    line-height: 1.5;
+    line-break: .5px;
+    margin-bottom: 10px;
+    
+  }
+  .faq-para-1{
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: .2px;
+    height: 0;
+    overflow: hidden;
+    transition: all .5s ease-in-out ;
+    /* padding: 10px;    */
+}
+.active{
+    height: auto;
+    /* background: #21609b; */
+    margin-top: 5px;
+    transition: all .5s ease-in-out ;
+    margin-bottom: 10px;
+    
+}
+.rotate-arrow-icon i{
+    transform: rotate(180deg);
+}
+  /*
   .faq-detail p{
     font-size: 16px;
     letter-spacing: 1px;
@@ -900,13 +954,43 @@ nav .nav-content ul li span{
     transform: rotate(180deg);
   }
 
-
+.faq-para-1{
+    font-size: 18px;
+    line-height: 1.5;
+    letter-spacing: .2px;
+    transition: all 2s;
+    
+}
+.qaz{
+    display: block;
+}
+.para-block-1{
+    display: none;
+}
+.para-block-2{
+    display: none;
+}
+.para-block-3{
+    display: none;
+}
+.para-block-4{
+    display: none;
+}
+.para-block-5{
+    display: none;
+}
+.para-block-6{
+    display: none;
+}
+.rotate-arrow{
+    transform: rotate(0deg)!important ;
+} */
 
 /*  Consultation section   */
 
 .consult-container{
     display: grid;
-    grid-template-columns: 80% 20%;
+    grid-template-columns: 1fr 20%;
     padding: 50px 0px;
 }
 .form-container{
