@@ -168,6 +168,66 @@ function removeHeading() {
     }
 }
 
+
+
+
+// Tech trends Section
+
+
+const TechIcon = document.querySelector(".trends-icon")
+const TechbBottom = document.querySelector(".trends-bottom")
+const TechIconChild = TechIcon.children
+const TechbBottomChild = TechbBottom.children
+
+for (let i = 0; i<TechIconChild.length;i++){
+    TechIconChild[i].addEventListener('click', ()=>{
+    TechBottomBlock()
+    TechbBottomChild[i].classList.add('disblock-1')
+    })
+}
+function TechBottomBlock(){
+    for (let i=0; i<TechbBottomChild.length; i++){
+        TechbBottomChild[i].classList.
+        remove('disblock-1') 
+        TechbBottomChild[0].classList.add('disnone-1')
+    }
+}
+
+// console.log(TechIcon.children)
+// console.log(TechIcon.children[0])
+// console.log(TechIcon.children[0].children[0])
+// TechIcon.children[0].addEventListener('click',(e)=>{
+//     TechIcon.children[0].children[0].classList.toggle('Yeah_I_am_Toggle_Class') 
+//     console.log('What r u Doing...')
+// })
+// console.log(TechbBottom.children)
+// console.log(TechbBottom.children[0])
+// console.log(TechbBottom.children[0].children[0])
+
+// TechbBottom.children[0].addEventListener('click',(e)=>{
+//     TechIcon.children[0].children[0].classList.toggle('Yeah_I_am_Toggle_Class') 
+//     console.log('Hey What Happend')
+// })
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // FAQ Section
 // const faqChild = document.querySelector(".faq-container")
 // console.log("hiii")
@@ -176,6 +236,72 @@ function removeHeading() {
 // console.log(faqChild.children[2])
 // console.log(faqChild.children[9])
 // console.log(faqChild.children[6])
+
+
+
+
+
+
+// Technology and Plateform Section 
+
+const plateform = document.querySelector('.plateform-conatiner')
+const technology = document.querySelector('.technology-container')
+const plateformChild = plateform.children
+const technologyChild = technology.children
+
+for( let i=0; i<plateformChild.length; i++){
+    plateformChild[i].addEventListener('click', ()=>{
+        technologyContainerDisplayNone()
+        technologyChild[i].style.display = "block"
+    })
+}
+function technologyContainerDisplayNone(){
+    for (let i=0;i<technologyChild.length;i++){
+        technologyChild[i].style.display = "none"
+    }
+}
+
+// Custumers Says Section
+
+const cominfo = document.querySelector('.custumers-main-left')
+const comimg = document.querySelector('.custumers-main-right')
+const cominfoChild = cominfo.children
+const comimgChild = comimg.children
+console.log(comimgChild.length)
+console.log('yusssssss')
+for (let i=0; i<comimgChild.length-1;i++){
+    
+    comimgChild[i].addEventListener('click',()=>{
+        custumersmainleft()
+        cominfoChild[i].style.display = 'block'
+        comimgChild[i].children[0].style.borderLeft = "5px solid #005eb8"
+        comimgChild[i].children[0].style.filter = 'grayscale(0%)'
+        comimgChild[i].children[0].style.opacity = 'none'
+    })
+}
+function custumersmainleft(){
+    for (let i=0; i<cominfoChild.length; i++){
+        cominfoChild[i].style.display = 'none'
+        comimgChild[i].children[0].style.borderLeft = "none"
+        comimgChild[i].children[0].style.filter = 'grayscale(100%)'
+        comimgChild[i].children[0].style.opacity = '10'
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 // FAQ Section JS =>
@@ -194,10 +320,10 @@ for (let i=0; i<faqbox.length ; i++){
     })
 }   
 const FAQ = document.querySelector('.faq-container')
-console.log('Hiiii')
-console.log(FAQ.children)
-console.log(FAQ.children[0])
-console.log(FAQ.children.length)
+// console.log('Hiiii')
+// console.log(FAQ.children)
+// console.log(FAQ.children[0])
+// console.log(FAQ.children.length)
 for(let i = 0; i<FAQ.children.length; i++){
     FAQ.children[i].addEventListener('click',(e)=>{
         console.log(FAQ.children[i])
@@ -207,7 +333,7 @@ for(let i = 0; i<FAQ.children.length; i++){
     // console.log(FAQ.children[i])
     // console.log("Yes")
 }
-console.log('Bye')
+// console.log('Bye')
 
 
 

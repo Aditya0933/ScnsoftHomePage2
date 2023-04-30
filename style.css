@@ -586,9 +586,6 @@ nav .nav-content ul li span{
 
 
 
-
-
-
 /* Technology and Plateform Section */
 .plateform-and-technology-main-container{
     display: grid;
@@ -607,6 +604,7 @@ nav .nav-content ul li span{
     /* background-color: #ed8b00;
     color: aqua; */
     padding: 2% 1% 3% 4%;
+    /* display: none; */
 }
 .technology{
     display: flex;
@@ -624,7 +622,62 @@ nav .nav-content ul li span{
     max-height: 67px;
     padding: 10px;
     width: 83px;
+    object-fit: contain;
 }
+
+
+/* success And Stories */
+
+.main-success-section{
+    display: flex;
+    flex-wrap: wrap;
+    border: 5px solid red;
+    /* gap: 10%; */
+    /* box-sizing: border-box  ; */
+}
+.main-success-section img{
+    object-fit: contain;
+}
+#img-1{
+    border:2px solid #005eb8;
+    background-color: #00b81f;
+    flex: 0 0 45%;
+    background-image: url(./IMG/succes-img-1.jpg);
+    object-fit: contain;
+    background-position: center;
+    background-position: -960px;
+}
+
+#img-2{
+    border:2px solid #111417;
+    background-color: #b80022;
+    flex: 0 0 55%;
+}
+#img-3{
+    border:2px solid #5300b8;
+    background-color: #0050b8;
+    flex: 0 0 25%;
+}
+#img-4{
+    border:2px solid #00b81f;
+    background-color: #af00b8;
+    flex: 0 0 25%;
+}
+#img-5{
+    border:2px solid #b80093;
+    background-color: #75b800;
+    flex: 0 0 50%;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Custumers Says Section */
 
@@ -669,14 +722,15 @@ nav .nav-content ul li span{
 .custumers-main-right img{
     height: 34px;
     width: auto;
-    border-left:5px solid #005eb8;
     padding: 0% 0% 0% 12%;
     filter: grayscale(100%);
+    opacity: 10;
     transition: filter .2s ease-in-out;
+    object-fit: contain;
 }
-.custumers-main-right img:hover{
+/* .custumers-main-right img:hover{
     filter: grayscale(0%);
-}
+} */
 
 
 
@@ -757,6 +811,49 @@ nav .nav-content ul li span{
     transform:rotate(-45deg);
     color:blue;
 }
+/* Recognitions and Partnerships */
+
+.partnership-section{
+    margin: 50px 0;
+}
+.partner-company{
+    display: flex;
+    /* flex-direction: row; */
+    /* float: left; */
+    overflow-x: scroll;
+    /* background-color: #005eb8; */
+    gap: 60px;
+    padding: 50px 0;
+}
+.partner-company .company{
+    
+}
+.partner-company .company img{
+    object-fit: contain;
+    aspect-ratio: 2/1;
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    /* background-color: #2a81c7; */
+    filter: grayscale(100%);
+    opacity:.4;
+    transition: all .3s ease-out;
+}
+.partner-company .company img:hover{
+    filter: grayscale(0%);
+    opacity: 100;
+}
+
+
+
+
+
+
+
+
+
+
 
 /* Finantial Times Section */
 
@@ -791,8 +888,8 @@ nav .nav-content ul li span{
 .feature img{
     aspect-ratio: 3/4;
     object-fit: contain;
-    max-height: auto;
-    max-width: 100%;
+    max-height: 100%;
+    max-width: auto;
 }
 .feature{
     padding:5%;
@@ -1007,7 +1104,11 @@ nav .nav-content ul li span{
     padding: 10px;
     font-size: 16px;
 }
-
+.input-div{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    column-gap: 20px;
+}
 .text-area {
     position: relative;
 }
