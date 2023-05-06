@@ -1,3 +1,19 @@
+// Main Company Logo
+var copy = document.querySelector(".main-company-logo").cloneNode(true)
+var hey = document.querySelector('.main-div-img-container').appendChild(copy)
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Moving Company logo
 
 // window.onload=()=>{
@@ -437,3 +453,32 @@ for(let i = 0; i<FAQ.children.length; i++){
 // console.log(faq[faq-1].children)
 
 
+
+
+
+
+
+
+
+
+// partner-company Section
+
+var cpoy = document.querySelector('.company').cloneNode(true)
+document.querySelector('.partner-company').appendChild(cpoy)
+// const mainimgdiv = document.querySelector(".partner-company")
+// console.log(mainimgdiv)
+// console.log(mainimgdiv.children.length)
+
+// var myVar = setInterval(movingContainer,2000)
+
+// function movingContainer(){ 
+//     // console.log(mainimgdiv.children[0])
+//     // console.log(mainimgdiv.children[1])
+//     // mainimgdiv.removeChild(mainimgdiv.children[0])
+//     // mainimgdiv.removeChild(mainimgdiv.children[1])
+//     mainimgdiv.appendChild(mainimgdiv.children[0])
+//     console.log(mainimgdiv.children[0])
+//     // mainimgdiv.appendChild(mainimgdiv.children[1])
+//     // console.log(mainimgdiv.children[1])
+//     console.log(mainimgdiv.children.length)
+// }
