@@ -342,6 +342,7 @@ nav .nav-content ul li span{
 
 .expolre-content{
     background-color: blueviolet;
+
     padding: 7% 0 0% 9%;
     position: relative;
 }
@@ -634,15 +635,12 @@ nav .nav-content ul li span{
     box-shadow: 2px 0px 10px rgba(0,0,0,.25);
 }
 
-
+.container-1{
+    border-bottom: 1px dotted rgb(0, 157, 255);
+}
 
 .row-devide-container{
-    display: grid;
-    grid-template-columns: 1oopx 1fr;
-    /* background-color: #ed8b00;
-    color: aqua; */
     padding: 2% 1% 3% 4%;
-    /* display: none; */
 }
 .technology{
     display: flex;
@@ -657,11 +655,17 @@ nav .nav-content ul li span{
     height: 67px;
     justify-content: center;
     margin-bottom: 10px;
-    margin-right: 10px;
-    max-height: 67px;
+    margin-right: 15px;
+    height: 80px;
     padding: 10px;
-    width: 83px;
+    width: 80px;
     object-fit: contain;
+    border-radius: 20px;
+    transition: all .2s ease-in;
+}
+.tech img:hover{
+    box-shadow: 0px 5px 5px #515050;
+    transform: scale(1.1);
 }
 
 
@@ -784,10 +788,13 @@ nav .nav-content ul li span{
     padding: 2% 6%;
 }
 .comma{
-    font-size: 60px;
+    font-size: 100px;
     font-weight: 1000;
-    display: inline-block;
-    box-sizing: border-box;
+    opacity: 0.2;
+    /* background-color: #005eb8; */
+    filter: grayscale(100%);
+    /* display: inline-block;
+    box-sizing: border-box; */
 }
 .custumer-info{
     display: flex;
@@ -800,6 +807,7 @@ nav .nav-content ul li span{
 }
 
 .custumers-main-right{
+    padding-top: 50px;
     display:grid;
     grid-template-rows: repeat(8,1fr);
     box-sizing: border-box;
@@ -1149,6 +1157,7 @@ nav .nav-content ul li span{
     
   }
   .faq-para-1{
+    padding-left: 10px;
     font-size: 18px;
     line-height: 1.5;
     letter-spacing: .2px;
