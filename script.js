@@ -1,3 +1,28 @@
+// Navigation Section
+let navIcon = document.querySelector(".nav-pop-up-icon")
+let navSection = document.querySelector(".nav-pop-up-section")
+let totalIcon = navIcon.children
+let totalSection = navSection.children
+let timesButton = document.querySelectorAll(".times-icon-i")
+let angleuUp = document.querySelectorAll(".arrow-angle-up")
+for(let i=0; i<totalIcon.length; i++){
+    totalIcon[i].addEventListener('click',(e) => {
+        for(let j=0;j<totalSection.length;j++){
+            totalSection[j].style.display = 'none'
+            angleuUp[j].style.transform = "rotate(0deg)";
+        }
+        totalSection[i].style.display = 'block'
+        angleuUp[i].style.transform = "rotate(180deg)";
+    })
+}
+for(let b=0; b<timesButton.length; b++){
+    timesButton[b].addEventListener('click',()=>{
+        totalSection[b].style.display = 'none' 
+        angleuUp[b].style.transform = "rotate(0deg)";               
+    })
+    
+}
+
 // Main Company Logo
 var copy = document.querySelector(".main-company-logo").cloneNode(true)
 var hey = document.querySelector('.main-div-img-container').appendChild(copy)
@@ -116,3 +141,16 @@ for(let i = 0; i<FAQ.children.length; i++){
 // partner-company Section
 var cpoy = document.querySelector('.company').cloneNode(true)
 document.querySelector('.partner-company').appendChild(cpoy)
+
+
+
+
+
+
+
+
+
+
+
+
+
