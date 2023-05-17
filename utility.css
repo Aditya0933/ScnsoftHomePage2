@@ -81,3 +81,11 @@
     font-weight: 600;
     color: #FFFFFF;
 }
+@media (max-width:768px) {
+    html{
+        font-size: 100%;
+    }
+    .container-padding{
+        padding: 4% 2%;
+    }
+}
