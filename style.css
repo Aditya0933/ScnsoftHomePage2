@@ -419,12 +419,7 @@ nav .nav-content ul ul li i{
 
 /* ECO System Section */
 .eco-system{
-    display: grid;
-    grid-template-columns: 55% 45%;
-}
-
-.eco-system-content{
-    padding: 7% 10%;
+    display: flex;
 }
 
 .eco-system-content ul{
@@ -432,9 +427,9 @@ nav .nav-content ul ul li i{
     grid-template-columns: 1fr 1fr;
 }
 
-.eco-system-img{
-    padding: 5%;
-    transform: translateY(-20px);
+.eco-system-img img{
+    height: 100%;
+    width: 100%;
 }
 
 /* Solution Deliver Section */
@@ -811,13 +806,13 @@ nav .nav-content ul ul li i{
 }
 
 .custumers-main-right img{
-    height: 34px;
-    width: auto;
+    object-fit: contain;
     padding: 0% 0% 0% 12%;
     filter: grayscale(100%);
     opacity: 10;
     transition: filter .2s ease-in-out;
-    object-fit: contain;
+    height: 32px;
+    width: auto;
 }
 
 /* Industry Expertise Section */
@@ -1110,19 +1105,24 @@ nav .nav-content ul ul li i{
 .input-div input{
     border: none;
     border-radius: 2px;
+    padding: 10px;
 }
 .input-div input::placeholder{
-    padding: 10px;
     border: none;
     /* background-color: #005eb8; */
     font-size: 20px;
-    color: #000000;
+    color: #917c7c;
 }
 .text-area{
     display: grid;
-    grid-template-rows: 50px;
+    grid-template-rows: 80px;
     margin-top: 20px;
     position: relative;
+    
+}
+.text-area input{
+    border-radius: 5px;
+    border: none;
 }
 .text-area p{
     position: absolute;
@@ -1140,6 +1140,7 @@ nav .nav-content ul ul li i{
     display: grid;
     place-items: center;
 }
+
 /* .consult-container{
     display: grid;
     grid-template-columns: 1fr 20%;
@@ -1281,16 +1282,96 @@ hr{
 }
 
 /* Media Querry */
+
+
 @media (max-width:1278px) {
     .nav-content{
         display: none;
     }
+    /*  Consultation section   */
+    .consult-container{
+        display: flex;
+        gap: 30px;
+        flex-direction: column;
+    }
+    .info-container{
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+    }
+    .input-div{
+        grid-template-columns: repeat(2,1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    Footer Section
+    .footer-container-1{
+        display: flex;
+        flex-direction: column;
+    }
 }
+
+
 @media (max-width:768px) {
     .navigation-bar{
         padding: 0 2%;
     }
+    /* Main Heading */
+    .main-heading h1{
+        font-size: 40px;
+    }
+    .main-company p{
+        font-size: 18px;
+        line-height: 2;
+    }
+    /*Tech Trends*/
+    .tech-trends-main-container{
+        padding: 4% 0%;
+    }
+    .trends-icon-1 p{
+        font-size: 16px;
+    }
+    /* Solution Deliver Section */
+    .deliver-boxes{
+        grid-template-columns: repeat(3,1fr);
+    }
+    .custumers-main-left p{
+        line-height: 2;
+    }
+    /* Industry Expertise Section */
+    .industry-container{
+        grid-row-gap:20px;
+        grid-column-gap:20px
+    }
+    .indrustry-1{
+        padding-top: 15px ;
+        padding-bottom: 15px ;
+    }
+    /* Recognitions and Partnerships */
+    .partnership-section{
+        margin: 20px 0;
+    }
+    .partner-company{
+        padding:20px 0;
+    }
+    /* Finantial Times Section */
+    .financial-section-content h2{
+        font-size: 26px !important;
+    }
+    .financial-section-content p{
+        font-size: 18px;
+        letter-spacing: 1px;
+    }
     /* success And Stories */
+    .img-front-content{
+        padding: 2% 3%;
+    }
+    .main-success-section h2{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .main-success-section p{
+        font-size: 12px;
+    }
     .main-success-section{
         display: grid;
         grid-template-rows: 1fr;
@@ -1303,22 +1384,21 @@ hr{
         display: grid;
         grid-template-rows: 175px 175px 175px;
        }
-   #img-1{
-    width: 100%;
-    }
-   #img-2{
-    width: 100%;
-    }
-   #img-3{
-    width: 100%;
-    }
-   #img-4{
-    width: 100%;
-    }
-   #img-5{
-    width: 100%;
-    }
-
+    #img-1{
+        width: 100%;
+        }
+    #img-2{
+        width: 100%;
+        }
+    #img-3{
+        width: 100%;
+        }
+    #img-4{
+        width: 100%;
+        }
+    #img-5{
+        width: 100%;
+        }
     /* Finantial Times Section */
     .financial-times-section{
         display: flex;
@@ -1338,26 +1418,9 @@ hr{
         height: 200px;
         width: 200px;
     }
-    
-    /*  Consultation section   */
-    .consult-container{
-        display: flex;
-        gap: 30px;
-        flex-direction: column;
-    }
-    .info-container{
-        display: grid;
-        grid-template-columns: repeat(3,1fr);
-    }
-    .input-div{
-        grid-template-columns: repeat(2,1fr);
-        grid-column-gap: 20px;
-        grid-row-gap: 20px;
-    }
     /* Footer Section */
     .footer-cont-1-section-a{
         display: flex;
-        
         flex-direction: column;
     }
     .footer-cont-1-section-b{
@@ -1367,7 +1430,6 @@ hr{
     .footer-container-2{
         display: flex;
         flex-direction: column-reverse;
-        
     }
     .foot-cont-2-section-a ul{
         display: flex;
@@ -1380,55 +1442,76 @@ hr{
     .footer-container-2 p{
         text-align: center;
     }
-
     .foot-cont-2-section-b-img{
         margin-bottom: 20px;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+        }
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (max-width:1278px) {
+@media (max-width:767px) {
     .nav-content{
         display: none;
     }
+    .eco-system{
+        display: flex;
+        flex-direction: column;
+    }.eco-system-img img{
+        object-fit: contain;
+        padding: 5%;
+    }
 }
-@media (max-width:1278px) {
+@media (max-width:766px) {
     .nav-content{
         display: none;
     }
-}
-@media (max-width:1278px) {
-    .nav-content{
-        display: none;
+    /* Solution Deliver Section */
+    .deliver-boxes{
+        grid-template-columns: repeat(1,1fr);
+        grid-row-gap: 10px;
     }
-}
-@media (max-width:1278px) {
-    .nav-content{
-        display: none;
+    .box-1{
+        font-size: 16px;
+        height: 60px;
     }
-}
-@media (max-width:1278px) {
-    .nav-content{
-        display: none;
+    /* Industry Expertise Section */
+    .industry-container{
+        display: flex;
+        flex-direction: column;
     }
-}
-@media (max-width:1278px) {
-    .nav-content{
+    .indrustry-1{
+        display: flex;
+        justify-content: space-between;
+    }
+    .img-div{
+        display: flex;
+        align-items: center;
+        gap: 30px;
+    }
+    .img-div p{
+        line-height: 2;
+        letter-spacing: .5px;
+        margin-top: 0px;
+    }
+    /* FAQ Section */
+    .faq-detail p{
         display: none;
+    } 
+}
+
+
+@media(max-width:765px){
+    /* Custumers Says Section */
+    .custumers-main-container{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .custumers-main-right{
+        display: flex;
+        overflow-x: scroll;
+    }
+    .cus-img img{
+        width: 100vw;
     }
 }

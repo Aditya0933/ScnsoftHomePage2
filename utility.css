@@ -88,4 +88,13 @@
     .container-padding{
         padding: 4% 2%;
     }
+    .expolre-content-heading{
+        margin-bottom: 17px;
+        font-size: 26px;
+    }
+    
+    .expolre-content-paragraph{
+        font-size: 16px;
+        letter-spacing: .5px;
+    }
 }
