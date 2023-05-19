@@ -1503,15 +1503,5 @@ hr{
 
 @media(max-width:765px){
     /* Custumers Says Section */
-    .custumers-main-container{
-        display: flex;
-        flex-direction: column-reverse;
-    }
-    .custumers-main-right{
-        display: flex;
-        overflow-x: scroll;
-    }
-    .cus-img img{
-        width: 100vw;
-    }
+   
 }
