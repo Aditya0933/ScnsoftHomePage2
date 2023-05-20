@@ -74,6 +74,26 @@ function TechBottomBlock(){
         TechbBottomChild[0].classList.add('disnone-1')
     }
 }
+// Media Querry Max-Width:764
+
+var dash = document.querySelector('.bottom-dash-section')
+console.log(dash.children)
+
+for (let i = 0; i<dash.length;i++){
+    dash[i].addEventListener('click',()=>{
+        console.log("HEyyyy")
+        TechBottomBlock()
+        TechbBottomChild[i].classList.add('disblock-1')
+    })
+}
+
+
+
+
+
+
+
+
 
 // Technology and Plateform Section 
 const plateform = document.querySelector('.plateform-conatiner')
@@ -119,6 +139,44 @@ function custumersmainleft(){
     }
 }
 
+// Custumers Says Section @media Max-Width: 764Px
+let right765 = document.querySelectorAll(".rightDivImg")
+var counter = 0;
+right765.forEach((rightDivImg,index) => {
+    rightDivImg.style.left = `${index*100}%`
+});
+
+// Prev Button Function Under Custumers Says Section 
+let pre = document.querySelector(".btn-pre");
+let next = document.querySelector(".btn-next");
+ function GoPre(){
+    counter--
+    if(counter < 0){
+        counter = 6
+    }
+    slideImage()
+    custumersmainleft()
+    cominfoChild[counter].style.display = 'block'
+    
+ }
+ // Next Button Function Under Custumers Says Section 
+ function GoNext(){
+    counter++
+    if(counter > 6){
+        counter = 0
+    }
+    slideImage()
+    custumersmainleft()
+    cominfoChild[counter].style.display = 'block'
+ }
+ const slideImage=()=>{
+    right765.forEach((rightDivImg,index) => {
+        rightDivImg.style.transform = `translate(-${counter*100}%)`
+    });
+ }
+
+
+
 // FAQ Section JS =>
 const faqbox = document.getElementsByClassName(".qqq")
 const FAQ = document.querySelector('.faq-container')
@@ -141,6 +199,11 @@ for(let i = 0; i<FAQ.children.length; i++){
 // partner-company Section
 var cpoy = document.querySelector('.company').cloneNode(true)
 document.querySelector('.partner-company').appendChild(cpoy)
+
+
+
+
+
 
 
 

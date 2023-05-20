@@ -597,6 +597,15 @@ nav .nav-content ul ul li i{
 .img-66 img:hover{
     top: -770px;
 }
+/* Media Querry Max-Width:764px*/
+.bottom-dash-section{
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.bottom-dash-section i{
+    font-size: 20px;
+}
 
 /* Technology and Plateform Section */
 .plateform-and-technology-main-container{
@@ -813,6 +822,11 @@ nav .nav-content ul ul li i{
     transition: filter .2s ease-in-out;
     height: 32px;
     width: auto;
+}
+
+/* @media Querry For Custumers Section */
+.left-img-div{
+    display: none;
 }
 
 /* Industry Expertise Section */
@@ -1336,6 +1350,7 @@ hr{
     }
     .custumers-main-left p{
         line-height: 2;
+        letter-spacing: .5px;
     }
     /* Industry Expertise Section */
     .industry-container{
@@ -1502,6 +1517,89 @@ hr{
 
 
 @media(max-width:765px){
+    /* Tech trends */
+    .trends-img{
+        display: none;
+    }
+    .small{
+        display: none;
+    }
+    .trends-icon{
+        
+        position: relative;
+    }
+    .trends-icon-1 {
+        position: absolute;
+        padding: 0%;
+    }
+    .trends-icon-1 p{
+        font-size: 18px;
+    }
+
+
+
+
     /* Custumers Says Section */
-   
+    .custumers-main-container{
+        display: flex;
+        flex-direction: column;
+    }
+    .custumers-main-right{
+        display: none;
+    }
+    .comma{
+        display: none;
+    }
+    .left-img-div{
+        display: block;
+    }
+    .left-img-div{
+        display: flex;
+        box-shadow: 0px 2px 5px rgb(88, 88, 88);
+        border-radius: 0 0 10px 10px;
+    }
+    .custumers-main-right-765px{
+        display: flex;
+        position: relative;
+        height: 100px;
+        width: 100%;
+        z-index: 4;
+        overflow: hidden;
+    }
+    .rightDivImg{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: absolute; 
+        height: 100px;
+        width: 100%;
+        padding: 2% 5%;
+    }
+    .rightDivImg img{
+        height: 100%;
+        width: 100%;
+        border-left: none;
+    }
+    .btn-pre{
+        padding-right: 4px;
+        padding-left: 10px;
+    }
+    .btn-next{
+        padding-left: 4px;
+        padding-right: 10px;
+    }
+    .angle-btn-style{
+        display: flex;
+        align-items: center;
+    }
+    .angle-btn-style button {
+        background: none;
+        border: none;
+    }
+    .angle-btn-style button i{
+        font-size: 35px;
+    }
+    .custumers-basic p{
+        line-height: 1.2;
+    }
 }
