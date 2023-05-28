@@ -1525,7 +1525,7 @@ hr{
         display: none;
     }
     .trends-icon{
-        
+        display: none;
         position: relative;
     }
     .trends-icon-1 {
@@ -1535,7 +1535,9 @@ hr{
     .trends-icon-1 p{
         font-size: 18px;
     }
-
+    .trends-icon:first-child{
+        display: block;
+    }
 
 
 

@@ -77,14 +77,24 @@ function TechBottomBlock(){
 // Media Querry Max-Width:764
 
 var dash = document.querySelector('.bottom-dash-section')
-console.log(dash.children)
+var dashChild = dash.children
 
-for (let i = 0; i<dash.length;i++){
-    dash[i].addEventListener('click',()=>{
+console.log(dash.children)
+console.log(dashChild[1])
+
+for (let i = 0; i<dashChild.length;i++){
+    dashChild[i].addEventListener('click',()=>{
         console.log("HEyyyy")
         TechBottomBlock()
+        trendsIconBlock()
         TechbBottomChild[i].classList.add('disblock-1')
+        TechIconChild[i].style.display = "block"
     })
+}
+function trendsIconBlock(){
+    for(let i = 0;i<TechIconChild.length;i++){
+        TechIconChild[i].style.display = "none"
+    }
 }
 
 
