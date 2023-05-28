@@ -79,16 +79,16 @@ function TechBottomBlock(){
 var dash = document.querySelector('.bottom-dash-section')
 var dashChild = dash.children
 
-console.log(dash.children)
-console.log(dashChild[1])
+// console.log(dash.children)
+// console.log(dashChild[1])
 
 for (let i = 0; i<dashChild.length;i++){
     dashChild[i].addEventListener('click',()=>{
-        console.log("HEyyyy")
         TechBottomBlock()
         trendsIconBlock()
         TechbBottomChild[i].classList.add('disblock-1')
         TechIconChild[i].style.display = "block"
+
     })
 }
 function trendsIconBlock(){

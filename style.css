@@ -597,6 +597,12 @@ nav .nav-content ul ul li i{
 .img-66 img:hover{
     top: -770px;
 }
+.dash{
+    display: none;
+}
+.med-764{
+    display: block;
+}
 /* Media Querry Max-Width:764px*/
 .bottom-dash-section{
     display: flex;
@@ -1518,29 +1524,23 @@ hr{
 
 @media(max-width:765px){
     /* Tech trends */
-    .trends-img{
-        display: none;
-    }
-    .small{
-        display: none;
-    }
-    .trends-icon{
-        display: none;
-        position: relative;
-    }
-    .trends-icon-1 {
-        position: absolute;
-        padding: 0%;
-    }
     .trends-icon-1 p{
         font-size: 18px;
     }
-    .trends-icon:first-child{
+    .dash{
         display: block;
     }
-
-
-
+    .med-764{
+        display: none;
+    }
+    .trends-icon{
+        display: flex;
+        justify-content: center;
+    }
+    .trends-icon-1{
+        padding: 0;
+    }
+    
     /* Custumers Says Section */
     .custumers-main-container{
         display: flex;
