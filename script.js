@@ -23,6 +23,18 @@ for(let b=0; b<timesButton.length; b++){
     
 }
 
+
+
+
+
+
+
+
+
+
+
+
+
 // Main Company Logo
 var copy = document.querySelector(".main-company-logo").cloneNode(true)
 var hey = document.querySelector('.main-div-img-container').appendChild(copy)
@@ -55,6 +67,25 @@ function removeHeading() {
     }
 }
 
+// Main Company Logo => Our Offering Section
+//  Media Querry At = 480px
+var expoDash = document.querySelector('.explore-bottom-dash-section')
+var expoDashChild = expoDash.children
+console.log(expoDashChild)
+for(let i =0;i<expoDashChild;i++){
+    console.log("fgyuhj")
+}
+
+
+
+
+
+
+
+
+
+
+
 // Tech trends Section
 const TechIcon = document.querySelector(".trends-icon")
 const TechbBottom = document.querySelector(".trends-bottom")
@@ -77,10 +108,14 @@ function TechBottomBlock(){
 // Media Querry Max-Width:764
 
 var dash = document.querySelector('.bottom-dash-section')
+var med764 = document.querySelectorAll(".med-764")
 var dashChild = dash.children
+console.log(med764.length)
+for(let i=0; i<med764.length; i++){
+    console.log("Yes Execute ")
+}
 
 // console.log(dash.children)
-// console.log(dashChild[1])
 
 for (let i = 0; i<dashChild.length;i++){
     dashChild[i].addEventListener('click',()=>{

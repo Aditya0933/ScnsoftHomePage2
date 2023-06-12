@@ -98,3 +98,13 @@
         letter-spacing: .5px;
     }
 }
+@media(max-width:480px){
+    .expolre-content-ul{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .expolre-content-ul-li{
+        list-style-type: square;
+        font-size: 14px;
+    }
+}

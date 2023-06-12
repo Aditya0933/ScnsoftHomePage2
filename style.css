@@ -386,6 +386,18 @@ nav .nav-content ul ul li i{
     right: 20px;
     bottom: 10px;
 }
+.explore-dash-section{
+    display: block;
+}
+.explore-bottom-dash-section{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.explore-bottom-dash-section i{
+    margin: 0 5px;
+    font-size: 22px;
+}
 
 /* web-mid-para */
 .web-mid-para p{
@@ -490,6 +502,7 @@ nav .nav-content ul ul li i{
 
 .trends-icon-1 {
     display: flex;
+    justify-content: center;
     align-items: center;
     flex-direction: column;
     margin: 0 10px;
@@ -600,9 +613,7 @@ nav .nav-content ul ul li i{
 .dash{
     display: none;
 }
-.med-764{
-    display: block;
-}
+
 /* Media Querry Max-Width:764px*/
 .bottom-dash-section{
     display: flex;
@@ -1524,18 +1535,18 @@ hr{
 
 @media(max-width:765px){
     /* Tech trends */
+    .trends-icon{
+        display: none;
+    }
+    .trends-icon:first-child{
+        display: block;
+    }
     .trends-icon-1 p{
         font-size: 18px;
+        text-align: left;
     }
     .dash{
         display: block;
-    }
-    .med-764{
-        display: none;
-    }
-    .trends-icon{
-        display: flex;
-        justify-content: center;
     }
     .trends-icon-1{
         padding: 0;
@@ -1603,5 +1614,17 @@ hr{
     }
     .custumers-basic p{
         line-height: 1.2;
+    }
+}
+@media(max-width:480px){
+    .container{
+        grid-template-columns: 0% 100%;
+        margin: 40px 0 0 0;
+    }
+    .explore-heading{
+        display: none;
+    }
+    .container-right{
+        padding: 1% 3%;
     }
 }
