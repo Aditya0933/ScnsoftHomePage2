@@ -25,6 +25,21 @@ for(let b=0; b<timesButton.length; b++){
 
 
 
+// For Dash Icon of Navigation Bar Media Querry 
+
+let navDash = document.querySelector('.nav-dash')
+
+function navDashFun(){
+    console.log("Yes Executed..!!!")
+    document.querySelector('.nav-right-side-icon').style.display = "none"
+    document.querySelector('.nav-content-2-inner').style.right = "0px"
+
+    console.log("Yes Doneeeeeee..!!!")
+}
+function navXmarkFun(){
+    document.querySelector('.nav-right-side-icon').style.display = "flex"
+    document.querySelector('.nav-content-2-inner').style.right = "-550px"
+}
 
 
 

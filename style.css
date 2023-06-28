@@ -13,44 +13,49 @@
     width: 100%;
     background-color: #005eb8;
     /* height: 68px; */
-    padding: 0 9%;
+    /* padding: 0 9%; */
     
 }
 .nav-logo{
     display: grid;
     place-items: center;
 }
-.nav-content{
+.nav-content-1{
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.nav-right-side-icon{
+    display: none;
 }
 nav{
     display: flex;
     justify-content: space-between;
     height: 68px;
 }
-.nav-content ul{
+.nav-content-1 ul{
     display: flex;
 }
-nav .nav-content ul li{
+nav .nav-content-1 ul li{
     list-style-type: none; 
     display: grid; 
     place-items: center;
     padding-right: 10px;
     font-size: 16px;
 }
-nav .nav-content ul ul li{
+nav .nav-content-1 ul ul li{
     display: flex; 
 }
-nav .nav-content ul ul li i{
+nav .nav-content-1 ul ul li i{
     padding-left: 5px;
 }
 .arrow-angle-up{
-    padding:0 8px;
+    padding-left: 4px;
     transition: all .5s;
 }
-
+.nav-content-2-inner{
+    display: none;
+}
 
 /* Nav-Pop-Up-Section */
 .nav-pop-up-section{
@@ -1314,8 +1319,8 @@ hr{
 
 
 @media (max-width:1278px) {
-    .nav-content{
-        display: none;
+    .nav-content-1{
+        display: block;
     }
     /*  Consultation section   */
     .consult-container{
@@ -1339,6 +1344,9 @@ hr{
     }
 }
 @media (max-width:1024px) {
+    nav .nav-content-1 ul li{
+        padding-right: 8px;
+    }
     .tech-trends-main-container {
         padding: 0% 0%;
     }
@@ -1347,8 +1355,55 @@ hr{
         padding: 0%;
     }
 }
+@media(max-width:835px){
+    .nav-content-1{
+        display: none;
+    }
+    .nav-right-side-icon{
+        display: flex;
+        align-items: center;
+        padding-right: 10px;
+        font-size: 25px;
+    }
 
 
+
+
+
+
+
+
+
+    /* .nav-content-2{
+        display: block;
+        
+    } */
+    .nav-content-2-inner{
+        display: flex;
+        align-items:flex-start;
+        justify-content: center;
+        position: relative;
+        right: -550px;
+        padding-top:50px;
+        height: 120vh;    
+        width: 30%;
+        background-color: #000000;
+        color: white;
+    }
+    .nav-content-2-inner ul li{
+        list-style-type: none;
+        padding: 15px 30px;
+    }
+    .arrow-angle-up{
+        margin-left: 8px;
+    }
+    .cancle-icon-div{
+        position: absolute;
+        top: 20px;
+        right: 20px;
+        font-size: 25px;
+    }
+}
 @media (max-width:768px) {
     .navigation-bar{
         padding: 0 2%;
@@ -1485,12 +1540,14 @@ hr{
         justify-content: center;
         align-items: center;
     }
+    .nav-content-1{
+        display: none;
+    }
+    
 }
 
 @media (max-width:767px) {
-    .nav-content{
-        display: none;
-    }
+    
     .eco-system{
         display: flex;
         flex-direction: column;
@@ -1500,9 +1557,13 @@ hr{
     }
 }
 @media (max-width:766px) {
-    .nav-content{
-        display: none;
+    .nav-right-side-icon{
+        display: flex;
+        align-items: center;
+        font-size: 22px;
+        padding-right: 10px;
     }
+
     /* Solution Deliver Section */
     .deliver-boxes{
         grid-template-columns: repeat(1,1fr);
@@ -1737,7 +1798,7 @@ hr{
 }
 @media(max-width:400px){
     .plateform-conatiner .container-1 p{
-        padding: 12px 10px 12px 5px;
+        padding: 10px 10px 10px 10px;
         line-height: 1.5;
     }
     .tech img{
