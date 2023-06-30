@@ -87,9 +87,17 @@ function removeHeading() {
 //  Media Querry At = 480px
 var expoDash = document.querySelector('.explore-bottom-dash-section')
 var expoDashChild = expoDash.children
-console.log(expoDashChild)
-for(let i =0;i<expoDashChild;i++){
-    console.log("fgyuhj")
+console.log("f")
+// console.log(expoDashChild)
+console.log("g")
+for(let i=0; i<expoDashChild.length; i++){
+    expoDashChild[i].addEventListener('click',(ele)=>{
+        console.log(ele)
+        console.log(ele.target.className)
+        console.log(ele.target.ClassName)
+        console.log("h")
+    })
+    console.log("i")
 }
 
 
