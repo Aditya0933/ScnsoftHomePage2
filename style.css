@@ -32,6 +32,7 @@ nav{
     display: flex;
     justify-content: space-between;
     height: 68px;
+    position: relative;
 }
 .nav-content-1 ul{
     display: flex;
@@ -41,7 +42,7 @@ nav .nav-content-1 ul li{
     display: grid; 
     place-items: center;
     padding-right: 10px;
-    font-size: 16px;
+    font-size: 16px; 
 }
 nav .nav-content-1 ul ul li{
     display: flex; 
@@ -1365,30 +1366,24 @@ hr{
         padding-right: 10px;
         font-size: 25px;
     }
-
-
-
-
-
-
-
-
-
     /* .nav-content-2{
         display: block;
         
     } */
     .nav-content-2-inner{
+        position: absolute;
+        /* display: none; */
         display: flex;
-        align-items:flex-start;
+        align-items:center;
         justify-content: center;
-        position: relative;
-        right: -550px;
         padding-top:50px;
-        height: 120vh;    
-        width: 30%;
+        height: 100vh;    
+        width: 300px;
         background-color: #000000;
         color: white;
+        z-index: -2;
+        right: -300px;
+        transition: all 4s;
     }
     .nav-content-2-inner ul li{
         list-style-type: none;
@@ -1398,16 +1393,12 @@ hr{
         margin-left: 8px;
     }
     .cancle-icon-div{
-        position: absolute;
         top: 20px;
         right: 20px;
         font-size: 25px;
     }
 }
 @media (max-width:768px) {
-    .navigation-bar{
-        padding: 0 2%;
-    }
     /* Main Heading */
     .main-heading h1{
         font-size: 40px;

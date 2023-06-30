@@ -34,11 +34,12 @@ function navDashFun(){
     document.querySelector('.nav-right-side-icon').style.display = "none"
     document.querySelector('.nav-content-2-inner').style.right = "0px"
 
-    console.log("Yes Doneeeeeee..!!!")
+    
 }
 function navXmarkFun(){
+    console.log("Yes Doneeeeeee..!!!")
     document.querySelector('.nav-right-side-icon').style.display = "flex"
-    document.querySelector('.nav-content-2-inner').style.right = "-550px"
+    document.querySelector('.nav-content-2-inner').style.right = "-300px"
 }
 
 
