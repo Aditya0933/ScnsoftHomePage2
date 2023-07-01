@@ -61,6 +61,7 @@ const containerRight = document.querySelector('.container-right');
 
 // array of children element
 const children_arr = parent_sec.children;
+const children_arr2 = containerRight.children;
 
 for (let i = 0; i < children_arr.length; i++) {
     children_arr[i].addEventListener('click', (e) => {
@@ -87,17 +88,13 @@ function removeHeading() {
 //  Media Querry At = 480px
 var expoDash = document.querySelector('.explore-bottom-dash-section')
 var expoDashChild = expoDash.children
-console.log("f")
-// console.log(expoDashChild)
+console.log("f")    
 console.log("g")
 for(let i=0; i<expoDashChild.length; i++){
     expoDashChild[i].addEventListener('click',(ele)=>{
-        console.log(ele)
-        console.log(ele.target.className)
-        console.log(ele.target.ClassName)
-        console.log("h")
+        removeHeading() 
+        children_arr2[i].classList.add('software-active')
     })
-    console.log("i")
 }
 
 

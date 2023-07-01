@@ -393,7 +393,7 @@ nav .nav-content-1 ul ul li i{
     bottom: 10px;
 }
 .explore-dash-section{
-    display: block;
+    display: none;
 }
 .explore-bottom-dash-section{
     margin-top: 10px;
@@ -1383,11 +1383,21 @@ hr{
         color: white;
         z-index: -2;
         right: -300px;
+        top: 0%;
         transition: all 4s;
+        overflow: scroll;
     }
     .nav-content-2-inner ul li{
         list-style-type: none;
-        padding: 15px 30px;
+        padding: 5px 0px;
+        font-size: 15px;
+        text-decoration: none;
+        color: #ecb3b3;
+    }
+    .nav-content-2-inner ul li ul li a{
+        font-size: 10px;
+        text-decoration: none;
+        color: #ed8b00;
     }
     .arrow-angle-up{
         margin-left: 8px;
@@ -1693,10 +1703,14 @@ hr{
         margin-bottom: 5px;
     }
 
-     /* Our Offering Section  */
+     /* Our Offering Section*/
      .explore-heading p{
         padding: 12px 10px 12px 16px;
         line-height: 1.5;
+    }
+    .container{
+        grid-template-columns: 100%;
+        margin: 0px 0 0 20px;
     }
     .container-right {
         padding: 4% 0 0% 0%;
@@ -1708,6 +1722,12 @@ hr{
     }
     .bottom-dash-section {
         margin-top: 20px;
+    }
+    .container-left{
+        display: none;
+    }
+    .explore-dash-section{
+        display: block;
     }
     /* Feature Section */
     .feature-heading{
@@ -1726,12 +1746,9 @@ hr{
 }
 @media(max-width:481px){
     .container{
-        grid-template-columns: 0% 100%;
-        margin: 40px 0 0 0;
+        margin: 1 0px 0 0 0;
     }
-    .explore-heading{
-        display: none;
-    }
+    
     .container-right{
         padding: 1% 5%;
     }
