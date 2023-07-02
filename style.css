@@ -353,6 +353,7 @@ nav .nav-content-1 ul ul li i{
     grid-template-columns: 30% 70%;
     margin: 70px 0 0 30px;
     box-shadow: 0 0px 12px 0 rgba(0,0,0,.1);
+    
 }
 
 .container-left{
@@ -1710,12 +1711,17 @@ hr{
     }
 }
 @media(max-width:481px){
+    .nav-content-2-inner {
+        width: 200px;
+    }
+    .main-container h2{
+        margin-bottom: 20px;
+    }
     .container{
         margin: 3px 0 0 0;
     }
-    
     .container-right{
-        padding: 1% 5%;
+        padding: 4% 5%;
     }
     
     /* Our Offering Section  */
