@@ -33,6 +33,8 @@ nav{
     justify-content: space-between;
     height: 68px;
     position: relative;
+    background-color: #fff;
+    box-shadow: 0 2px 8px 0 rgba(0,0,0,.1);
 }
 .nav-content-1 ul{
     display: flex;
