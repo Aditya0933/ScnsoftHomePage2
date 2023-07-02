@@ -407,7 +407,6 @@ nav .nav-content-1 ul ul li i{
 
 /* web-mid-para */
 .web-mid-para p{
-    margin-bottom: 20px;
     text-align: center;
     line-height: 2;
     font-size: 18px;
@@ -553,6 +552,7 @@ nav .nav-content-1 ul ul li i{
     font-weight: 600;
     text-align: center;
     margin-top: 5px;
+    padding-bottom: 10px;
 }
 
 .trends-img{
@@ -688,7 +688,10 @@ nav .nav-content-1 ul ul li i{
     gap: 25px;
 }
 .main-success-section h2{
-    font-size: 22px;
+    font-size: 15px;
+}
+.main-success-section p{
+    font-size: 13px;
 }
 .section-1-img{
     display: flex;
@@ -819,7 +822,7 @@ nav .nav-content-1 ul ul li i{
 }
 
 .custumers-basic p{
-    font-size: 20px;
+    font-size: 14px;
     font-weight: 500;
 }
 
@@ -961,7 +964,6 @@ nav .nav-content-1 ul ul li i{
 /* Finantial Times Section */
 .financial-times-section{
     display:grid;
-    grid-template-columns:1fr 1fr;
     background-color: rgb(240, 249, 255);
 }
 
@@ -1175,75 +1177,6 @@ nav .nav-content-1 ul ul li i{
     display: grid;
     place-items: center;
 }
-
-/* .consult-container{
-    display: grid;
-    grid-template-columns: 1fr 20%;
-    padding: 50px 0px;
-}
-
-.form-container{
-    padding-right: 20px;
-}
-
-.input-div{
-    display: flex;
-    justify-content: space-between;
-    margin: 25px 0px;
-}
-
-.input-div input{
-    padding: 10px;
-    font-size: 16px;
-}
-
-.input-div{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 20px;
-}
-
-.text-area {
-    position: relative;
-}
-
-.text-area input{
-    width: 100%;
-    height: 100px;
-}
-
-.text-area p{
-    position: relative;
-    font-size: 15px;
-    top:-110px;
-    left: 20px;
-    background-color: #FFFFFF;
-    display: inline-block;
-    padding: 0 10px;
-}
-
-.info-container{
-    padding: 10px;
-}
-
-.contact-div{
-    display: flex;
-    font-size: 20px;
-    color: #005eb8;
-    margin-top: 20px;
-    margin-bottom: 20px;
-}
-
-.contact-no{
-    display: flex;
-    flex-direction:column;
-    margin-left: 20px;
-}
-
-.inquries{
-    margin-bottom: 20px;
-} */
-
 /* footer Section */
 footer{
     background-color:#0B3155;
@@ -1338,10 +1271,14 @@ hr{
         grid-column-gap: 20px;
         grid-row-gap: 20px;
     }
-    Footer Section
+    /* Footer Section */
     .footer-container-1{
         display: flex;
         flex-direction: column;
+    }
+    .footer-container-1 {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
     }
 }
 @media (max-width:1024px) {
@@ -1372,27 +1309,24 @@ hr{
     } */
     .nav-content-2-inner{
         position: absolute;
-        /* display: none; */
         display: flex;
-        align-items:center;
         justify-content: center;
         padding-top:50px;
-        height: 100vh;    
+        height: 120vh;    
         width: 300px;
-        background-color: #000000;
-        color: white;
-        z-index: -2;
+        background-color: white;
+        z-index: 2;
         right: -300px;
         top: 0%;
-        transition: all 4s;
+        transition: all 1.5s ease-in-out;
         overflow: scroll;
     }
     .nav-content-2-inner ul li{
         list-style-type: none;
-        padding: 5px 0px;
-        font-size: 15px;
+        padding: 15px 0px;
+        font-size: 20px;
         text-decoration: none;
-        color: #ecb3b3;
+        cursor: pointer;
     }
     .nav-content-2-inner ul li ul li a{
         font-size: 10px;
@@ -1406,6 +1340,7 @@ hr{
         top: 20px;
         right: 20px;
         font-size: 25px;
+        position: absolute;
     }
 }
 @media (max-width:768px) {
@@ -1416,6 +1351,13 @@ hr{
     .main-company p{
         font-size: 18px;
         line-height: 2;
+    }
+    .main-div-img-container:before{
+        width: 100px;
+    }
+    
+    .main-div-img-container:after{
+        width: 100px;
     }
     /*Tech Trends*/
     
@@ -1448,7 +1390,7 @@ hr{
     }
     /* Finantial Times Section */
     .financial-section-content h2{
-        font-size: 26px !important;
+        font-size: 24px !important;
     }
     .financial-section-content p{
         font-size: 18px;
@@ -1527,7 +1469,6 @@ hr{
     .foot-cont-2-section-a ul{
         display: flex;
         justify-content: center;
-        align-items: center;
     }
     .foot-cont-2-section-a p{
         text-align: center;
@@ -1641,7 +1582,6 @@ hr{
     }
     .left-img-div{
         display: flex;
-        box-shadow: 0px 2px 5px rgb(88, 88, 88);
         border-radius: 0 0 10px 10px;
     }
     .custumers-main-right-765px{
@@ -1729,6 +1669,12 @@ hr{
     .explore-dash-section{
         display: block;
     }
+    .main-div-img-container:before{
+        width: 80px;
+    }
+    .main-div-img-container:after{
+        width: 80px;
+    }
     /* Feature Section */
     .feature-heading{
         margin:10px 0;
@@ -1744,9 +1690,20 @@ hr{
         height: 64px;
     }
 }
+@media(max-width:547px){
+    .info-container {
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        text-align: center;
+        place-items: center;
+    }
+    .btn-learn-more {
+        margin-top: 10px;
+    }
+}
 @media(max-width:481px){
     .container{
-        margin: 1 0px 0 0 0;
+        margin: 3px 0 0 0;
     }
     
     .container-right{
@@ -1792,6 +1749,12 @@ hr{
         line-height: 1.5;
         font-size: 14px;
     }
+    .main-div-img-container:before{
+        width: 60px;
+    }
+    .main-div-img-container:after{
+        width: 60px;
+    }
     .input-div {
         grid-template-columns: repeat(1,1fr);
     }
@@ -1805,6 +1768,12 @@ hr{
     }
 }
 @media(max-width:400px){
+    .main-div-img-container:before{
+        width: 40px;
+    }
+    .main-div-img-container:after{
+        width: 40px;
+    }
     .plateform-conatiner .container-1 p{
         padding: 10px 10px 10px 10px;
         line-height: 1.5;

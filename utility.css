@@ -44,6 +44,7 @@
     border: none;
     color: #005eb8;
     font-weight: 500;
+    cursor: pointer;
 }
 
 .btn-container{
@@ -86,22 +87,29 @@
         font-size: 100%;
     }
     .container-padding{
-        padding: 4% 2%;
+        padding: 7% 4%;
     }
     .expolre-content-heading{
         margin-bottom: 17px;
         font-size: 26px;
     }
-    
     .expolre-content-paragraph{
         font-size: 16px;
         letter-spacing: .5px;
+    }
+    .expolre-content-ul{
+        grid-template-columns: 1fr;
+    }
+    
+    .expolre-content-ul-li{
+        padding-top: 14px;
+        margin: 0px 0px 0px 0px;
     }
 }
 @media(max-width:480px){
     .expolre-content-heading{
         margin-bottom: 15px;
-        font-size: 23px;
+        font-size: 24px;
     }
     .expolre-content-paragraph{
         font-size: 15px;
@@ -118,7 +126,7 @@
 @media(max-width:440px){
     .expolre-content-heading{
         margin-bottom: 13px;
-        font-size: 21px;
+        font-size: 24px;
     }
     .expolre-content-paragraph{
         font-size: 15px;
