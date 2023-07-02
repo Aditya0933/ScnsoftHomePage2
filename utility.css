@@ -12,6 +12,16 @@
 .expolre-content-heading{
     margin-bottom: 20px;
     font-size: 28px;
+    position: relative;
+}
+.expolre-content-heading::after{
+    background-color: #ed8b00;
+    content: "";
+    display: block;
+    height: 2px;
+    margin: 10px 0 0;
+    width: 40px;
+
 }
 
 .expolre-content-paragraph{

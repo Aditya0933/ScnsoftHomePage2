@@ -44,6 +44,7 @@ nav .nav-content-1 ul li{
     place-items: center;
     padding-right: 10px;
     font-size: 16px; 
+    cursor: pointer;
 }
 nav .nav-content-1 ul ul li{
     display: flex; 
@@ -351,6 +352,7 @@ nav .nav-content-1 ul ul li i{
     display: grid;
     grid-template-columns: 30% 70%;
     margin: 70px 0 0 30px;
+    box-shadow: 0 0px 12px 0 rgba(0,0,0,.1);
 }
 
 .container-left{
@@ -378,6 +380,8 @@ nav .nav-content-1 ul ul li i{
     padding: 7% 0 0% 9%;
     position: relative;
     width: 100%;
+    
+    
 }
 
 .container-right>div{
@@ -421,18 +425,18 @@ nav .nav-content-1 ul ul li i{
 
 .web-mid-search i{
     position: absolute;
-    top: 45%;
-    padding-left: 20px;
+    top: 47%;
+    padding-left: 25px;
 }
 
 .web-mid-search input{
     width: 100%;
     height: 56px;
     line-height: 40px;
-    background-color: #005eb8;
     border: none;
     padding: 7px 10px 7px 60px;
     border-radius: 50px;
+    box-shadow: 0 0 8px rgb(0,0,0,0.1);
 }
 
 /* ECO System Section */
@@ -795,8 +799,8 @@ nav .nav-content-1 ul ul li i{
 
 .img-content ul li{
     list-style-type: none;
-    margin-top: 15px;
-    font-size: 24px;
+    margin-top: 3px;
+    font-size: 16px;
     font-weight: 500;
 }
 
@@ -975,6 +979,7 @@ nav .nav-content-1 ul ul li i{
 .financial-section-img{
     display:grid;
     place-items:center;
+    padding: 2%;
 }
 
 /* Feature Section */
@@ -1101,7 +1106,7 @@ nav .nav-content-1 ul ul li i{
 
   .faq-para p{
     font-size: 20px;
-    color: blue;
+    color: #005eb8;;
     padding: 20 0px;
     line-height: 1.5;
     line-break: .5px;
@@ -1144,6 +1149,7 @@ nav .nav-content-1 ul ul li i{
     border: none;
     border-radius: 2px;
     padding: 10px;
+    box-shadow: 0 0 12px rgb(0,0,0,0.2);
 }
 .input-div input::placeholder{
     border: none;
@@ -1156,7 +1162,8 @@ nav .nav-content-1 ul ul li i{
     grid-template-rows: 80px;
     margin-top: 20px;
     position: relative;
-    
+    box-shadow: 0 0 12px rgb(0,0,0,0.2);
+    border-radius: 8px;
 }
 .text-area input{
     border-radius: 5px;
@@ -1737,6 +1744,20 @@ hr{
         width: 65px;
     }
 
+    .faq-para-1 {
+        font-size: 16px;
+        line-height: 1.5;
+        padding-left: 0;
+    }
+    .faq-para p{
+        font-size: 16px;
+        color: #005eb8;;
+        padding: 20 0px;
+        line-height: 1.5;
+        line-break: .5px;
+        margin-bottom: 10px;  
+      }
+      
     /* Footer Section*/
     .foot-cont-2-section-b img {
         width: 130px;
