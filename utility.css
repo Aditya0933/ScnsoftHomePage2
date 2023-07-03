@@ -92,6 +92,11 @@
     font-weight: 600;
     color: #FFFFFF;
 }
+@media (max-width:1024px){
+    .faq-main-container {
+        padding: 14% 6%;
+    }
+}
 @media (max-width:768px) {
     html{
         font-size: 100%;
@@ -115,6 +120,9 @@
         padding-top: 14px;
         margin: 0px 0px 0px 0px;
     }
+    .faq-main-container {
+        padding: 12% 5%;
+    }
 }
 @media(max-width:480px){
     .expolre-content-heading{
@@ -133,6 +141,9 @@
         font-size: 14px;
         margin-left: 10px;
     }
+    .faq-main-container {
+        padding: 10% 5%;
+    }
 }
 @media(max-width:440px){
     .expolre-content-heading{
@@ -143,4 +154,9 @@
         font-size: 15px;
         line-height: 1.5;
     }
+}
+.foot-cont-2-section-a ul li{
+    font-size: 13px;
+    padding-left: 2%;
+    border-left: 2px solid #ffffff;
 }
