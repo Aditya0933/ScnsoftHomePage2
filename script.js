@@ -15,6 +15,7 @@ for(let i=0; i<totalIcon.length; i++){
         angleuUp[i].style.transform = "rotate(180deg)";
     })
 }
+
 for(let b=0; b<timesButton.length; b++){
     timesButton[b].addEventListener('click',()=>{
         totalSection[b].style.display = 'none' 
@@ -23,10 +24,7 @@ for(let b=0; b<timesButton.length; b++){
     
 }
 
-
-
 // For Dash Icon of Navigation Bar Media Querry 
-
 let navDash = document.querySelector('.nav-dash')
 
 function navDashFun(){
@@ -36,20 +34,12 @@ function navDashFun(){
 
     
 }
+
 function navXmarkFun(){
     console.log("Yes Doneeeeeee..!!!")
     document.querySelector('.nav-right-side-icon').style.display = "flex"
     document.querySelector('.nav-content-2-inner').style.right = "-300px"
 }
-
-
-
-
-
-
-
-
-
 
 // Main Company Logo
 var copy = document.querySelector(".main-company-logo").cloneNode(true)
@@ -97,16 +87,6 @@ for(let i=0; i<expoDashChild.length; i++){
     })
 }
 
-
-
-
-
-
-
-
-
-
-
 // Tech trends Section
 const TechIcon = document.querySelector(".trends-icon")
 const TechbBottom = document.querySelector(".trends-bottom")
@@ -126,8 +106,8 @@ function TechBottomBlock(){
         TechbBottomChild[0].classList.add('disnone-1')
     }
 }
-// Media Querry Max-Width:764
 
+// Media Querry Max-Width:764
 var dash = document.querySelector('.bottom-dash-section')
 var med764 = document.querySelectorAll(".med-764")
 var dashChild = dash.children
@@ -137,7 +117,6 @@ for(let i=0; i<med764.length; i++){
 }
 
 // console.log(dash.children)
-
 for (let i = 0; i<dashChild.length;i++){
     dashChild[i].addEventListener('click',()=>{
         TechBottomBlock()
@@ -152,14 +131,6 @@ function trendsIconBlock(){
         TechIconChild[i].style.display = "none"
     }
 }
-
-
-
-
-
-
-
-
 
 // Technology and Plateform Section 
 const plateform = document.querySelector('.plateform-conatiner')
@@ -223,8 +194,8 @@ let next = document.querySelector(".btn-next");
     slideImage()
     custumersmainleft()
     cominfoChild[counter].style.display = 'block'
-    
  }
+
  // Next Button Function Under Custumers Says Section 
  function GoNext(){
     counter++
@@ -240,8 +211,6 @@ let next = document.querySelector(".btn-next");
         rightDivImg.style.transform = `translate(-${counter*100}%)`
     });
  }
-
-
 
 // FAQ Section JS =>
 const faqbox = document.getElementsByClassName(".qqq")
@@ -265,21 +234,3 @@ for(let i = 0; i<FAQ.children.length; i++){
 // partner-company Section
 var cpoy = document.querySelector('.company').cloneNode(true)
 document.querySelector('.partner-company').appendChild(cpoy)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
